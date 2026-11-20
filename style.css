@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #080d27, #17234b, #080d27);
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.artist-photo {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  max-height: 480px;
+  object-fit: cover;
+  margin: 0 auto 25px;
+  border: 3px solid #e4bd66;
+  border-radius: 18px;
+  box-shadow: 0 0 30px #d6a84c55;
+}
+
+.eyebrow {
+  color: #e4bd66;
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #f5d58b;
+  font-size: clamp(42px, 9vw, 75px);
+  letter-spacing: 7px;
+  text-shadow: 0 0 20px #d6a84c66;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 10px 0 20px;
+}
+
+.intro {
+  color: #d7d9e8;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+  max-width: 550px;
+}
+
+.music-card,
+.notes-card {
+  background: #ffffff0d;
+  border: 1px solid #d6b56b66;
+  border-radius: 18px;
+  padding: 28px 18px;
+  margin: 22px 0;
+  box-shadow: 0 8px 30px #00000030;
+}
+
+h3 {
+  color: #f3d28b;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.music-card p {
+  color: #d7d9e8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #d6b56b;
+  color: #10152c;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 28px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #ffe3a1;
+  transform: translateY(-2px);
+}
+
+#status {
+  color: #f3d28b;
+  min-height: 20px;
+}
+
+.note-line {
+  background: #ffffff0b;
+  border-radius: 10px;
+  padding: 14px 10px;
+  margin: 10px 0;
+  color: #fff0c9;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+footer {
+  color: #d6b56b;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 25px 10px;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .note-line {
+    font-size: 13px;
+  }
+}
